@@ -6,7 +6,8 @@ function MyTodoList() {
   const [todoList, setTodoList] = useState([]);
   const [status, setStatus] = useState("Pending")
 
-  function addTodo() {
+  function addTodo(e) {
+    e.preventDefault()
     setTodoList([...todoList, inputValue]);
     setInputValue("");
   }
@@ -28,7 +29,7 @@ function MyTodoList() {
 
   return (
     <div className="todoContainer">
-      <div className="todoInput">
+      <form className="todoInput">
         <input
           type="text"
           className="input"
@@ -39,7 +40,7 @@ function MyTodoList() {
         <button type="submit" className="todoInputBtn" onClick={addTodo}>
           Add
         </button>
-      </div>
+      </form>
 
       {todoList !== [] &&
         todoList.map((todo, idx) => {
