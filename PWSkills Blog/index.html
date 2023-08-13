@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWSkills Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome link  -->
+    <script src="https://kit.fontawesome.com/65ef7a00e7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="header">
+            <h1>PWSkills Blog</h1>
+            <i class="fa-solid fa-plus" id="addBlogIcon"></i>
+        </div>
+
+        <section class="blogs">
+            <div class="blogCards">
+                <div class="card">
+                    <img src="https://th.bing.com/th/id/OIP.a5YOm_1N-oe-O025Jw4PTQHaE8?pid=ImgDet&rs=1" alt="" class="cardImage">
+                    <h2 id="showBlogTitle" class="blogTitle">Blog Title: First Blog</h2>
+                    <p id="showBlogDesc" class="blogDesc">Blog Description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, possimus.</p>
+                    <a href="blog.html" class="blogReadBtn">Read</a>
+                </div>    
+            </div>
+        </section>
+
+        <div class="addBlogModel">
+            <form class="blogModel" id="blogForm">
+                <div class="modelCloseDiv">
+                    <i class="fa-solid fa-xmark" id="closeModelIcon"></i>
+                </div>
+                <input type="text" placeholder="Enter Blog Post URL" id="blogUrl">
+                <input type="text" placeholder="Enter Image URL / Link" id="blogImageUrl">
+                <input type="text" placeholder="Enter Blog Title" id="blogTitle">
+                <input type="text" placeholder="Enter Blog Description" id="blogDesc">
+                <textarea placeholder="Write..." id="blogContent" cols="30" rows="10"></textarea>
+                <button id="addBlogBtn" type="submit">Add Blog</button>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
