@@ -8,4 +8,5 @@
   min-height: 100vh;
   background: #501863;
   text-align: center;
+  overflow-x: hidden;
 }
